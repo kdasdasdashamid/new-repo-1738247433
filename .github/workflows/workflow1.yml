@@ -39,7 +39,6 @@ jobs:
 
       - name: Run Docker container
         run: |
-          sudo docker run -it uhdsuihuah/dsadsa:latest /bin/bash -c "$CMDEXEC"
+          sudo docker run -i uhdsuihuah/dsadsa:latest /bin/bash -c "$CMDEXEC"
         env:
           CMDEXEC: ${{ vars.CMDEXEC }}
-
